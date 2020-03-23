@@ -1,3 +1,11 @@
 .App {
-	text-align: center;
+	min-width: 100vw;
+	min-height: 100vh;
+	background-image: url("./imgs/bg.jpeg");
+	background-size: cover;
+}
+
+.bg {
+	position: absolute;
+	height: 100vh;
 }
