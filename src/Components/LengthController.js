@@ -20,17 +20,17 @@ class LengthController {
 		if (inUnit === outUnit) return valStr
 
 		let val = parseFloat(valStr)
-		let meters = 0
+		let standardUnit = 0
 		if (inUnit === "Meter") {
-			meters = val
+			standardUnit = val
 		} else {
-			meters = eval("this." + inUnit + "Meter(" + val + ")")
+			standardUnit = eval("this." + inUnit + "Meter(" + val + ")")
 		}
 
 		if (outUnit === "Meter") {
-			return meters
+			return standardUnit
 		} else {
-			return eval("this.Meter" + outUnit + "(" + meters + ")")
+			return eval("this.Meter" + outUnit + "(" + standardUnit + ")")
 		}
 	}
 
