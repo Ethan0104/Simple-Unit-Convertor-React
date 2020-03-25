@@ -66,7 +66,7 @@ class LengthController {
 		return 0.001 * x
 	}
 	MeterCentimeter(x) {
-		return 1000 * x
+		return 100 * x
 	}
 	MeterDecimeter(x) {
 		return 10 * x
